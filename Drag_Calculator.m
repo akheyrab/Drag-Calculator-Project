@@ -70,10 +70,10 @@ l_n = 16.8;
 %% Plot Digitization
 
 % Typical Aircraft Roughness
-load("Re.mat")
-load("Coeff.mat")
+load("Curve Fitting Data\Re.mat")
+load("Curve Fitting Data\Coeff.mat")
 
-load("Aircraft_Roughness.mat")
+load("Curve Fitting Data\Aircraft_Roughness.mat")
 
 Re = linspace(1*10^5,1*10^9,1000);
 
@@ -101,8 +101,9 @@ grid on
 
 % Fineness Ratio
 
-load('K2.mat')
-load("L_D.mat")
+load('Curve Fitting Data\K2.mat')
+load("Curve Fitting Data\L_D.mat")
+
 L_D = linspace(3,11,1000);
 
 K2 = 5.3933*exp(-0.9111*L_D) + 1.3965*exp(-0.0279*L_D);
@@ -234,7 +235,7 @@ grid on
 % Efficiency Digitization
 AR = AR;
 L = W;
-load('efficiency_for_real.mat')
+load('Curve Fitting Data\efficiency_for_real.mat')
 
 
 
